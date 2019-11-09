@@ -4,6 +4,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -27,4 +31,30 @@ li a {
 /* Change the link color on hover */
 li a:hover {
   color: black;
+} 
+
+.container{
+  width: calc(100% - 20px);
+  min-height: calc(100vh - 20px);
+  padding:10px;
+}
+
+/*******************/
+/*     ACCUEIL     */
+/*******************/
+#accueil{
+  display:flex;
+}
+
+.accueil-background {
+  margin-left: auto;
+  background-image: url("../img/montfuji.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 70vw;
+}
+
+.accueil-background h1{
+  width:220px;
+  transform:translateX(-50%);
 }
