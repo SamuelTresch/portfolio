@@ -42,7 +42,6 @@ li a:hover {
 
 #accueil{
   display:flex;
-  background:green;
 }
 
 .accueil-background {
@@ -63,7 +62,6 @@ li a:hover {
 
 #a-propos{
   display:  flex;
-  background:red;
 }
 
 #a-propos > div{
@@ -75,3 +73,33 @@ li a:hover {
   width:100%;
 }
 
+/**********************/
+/*    REALISATIONS    */
+/**********************/
+
+#realistions{
+  display: flex;
+}
+
+#realisations h2{
+  text-align: center;
+  margin: 20px auto 50px auto;
+}
+
+#realisations > div{
+  display:flex;
+  margin: 15px auto;
+  width:50%;
+}
+
+#realisations > div:nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+#realisations > div img{
+  width:300px;
+}
+
+#realisations > div > div{
+  padding:10px;
+}
