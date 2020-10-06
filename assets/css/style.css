@@ -10,7 +10,7 @@ html{
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 40px;
   padding: 0;
   width: 200px;
   position: fixed;
@@ -23,6 +23,7 @@ li a {
   color: #a7a7a7;
   padding: 8px 16px;
   text-decoration: none;
+  font-size:18px;
 }
 
 /* Change the link color on hover */
@@ -77,8 +78,8 @@ li a:hover {
 /*    REALISATIONS    */
 /**********************/
 
-#realistions{
-  display: flex;
+#realisations{
+  background:#f3f3f3;
 }
 
 #realisations h2{
@@ -101,7 +102,17 @@ li a:hover {
 }
 
 #realisations > div > div{
-  padding:10px;
+  padding:15px;
+}
+
+#realisations a {
+  background:black;
+  padding:5px 10px;
+  cursor:pointer;
+  border-radius:6px;
+  color:white;
+  text-decoration: none;
+  font-size:14px;
 }
 
 /********************/
@@ -110,6 +121,8 @@ li a:hover {
 
 #contact{
   display: flex;
+  height:calc(100vh - 120px);
+  margin:50px auto;
 }
 
 #contact > div > div {
@@ -138,7 +151,7 @@ li a:hover {
 }
 
 #contact > div img{
-  width:350px;
+  width:400px;
 }
 
 /********************/
@@ -152,7 +165,6 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 footer p{
@@ -171,5 +183,32 @@ footer div{
 footer img{
   width: 20px;
   margin: auto;
+}
+
+/**********************/
+/*    REALISATIONS    */
+/**********************/
+
+#infographie{
+  display: flex;
+}
+
+#infographie h2{
+  text-align: center;
+  margin: 175px auto 100px auto;
+}
+
+#infographie > div{
+  background:red;
+  margin: 50px auto;
+  width:50%;
+}
+
+#infographie > div:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+#infographie > div img{
+  width:500px;
 }
 
